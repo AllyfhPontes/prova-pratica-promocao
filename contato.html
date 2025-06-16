@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contato - ChubbyHub</title>
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/components/navbar.css"/>
+  <link rel="stylesheet" href="css/components/footer.css"/>
+  <link rel="stylesheet" href="css/pages/contact.css"/>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>ChubbyHub</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produto.html">Produtos</a></li>
+          <li><a href="carrinho.html">Carrinho</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="contact">
+      <h2>Entre em Contato</h2>
+      <div class="contact-grid">
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+              <label for="name">Nome Completo</label>
+              <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Assunto</label>
+              <select id="subject" required>
+                <option value="">Selecione um assunto</option>
+                <option value="duvida">Dúvida sobre Produto</option>
+                <option value="trocas">Trocas e Devoluções</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Mensagem</label>
+              <textarea id="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar Mensagem</button>
+          </form>
+        </div>
+
+        <div class="contact-info">
+          <div class="info-section">
+            <h3>Informações de Contato</h3>
+            <ul>
+              <li>
+                <strong>Endereço:</strong>
+                <p>Rua das Flores, 123<br>São Paulo - SP</p>
+              </li>
+              <li>
+                <strong>Telefone:</strong>
+                <p>(11) 1234-5678</p>
+              </li>
+              <li>
+                <strong>E-mail:</strong>
+                <p>contato@chubbyhub.com.br</p>
+              </li>
+              <li>
+                <strong>Horário de Atendimento:</strong>
+                <p>Segunda a Sexta: 9h às 18h<br>Sábado: 9h às 13h</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="info-section">
+            <h3>Redes Sociais</h3>
+            <div class="social-links">
+              <a href="#" class="social-link">Instagram</a>
+              <a href="#" class="social-link">Facebook</a>
+              <a href="#" class="social-link">Twitter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 ChubbyHub</p>
+  </footer>
+</body>
+</html> 

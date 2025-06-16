@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ChubbyHub</title>
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/components/navbar.css"/>
+  <link rel="stylesheet" href="css/components/footer.css"/>
+  <link rel="stylesheet" href="css/components/modal.css"/>
+  <link rel="stylesheet" href="css/components/logo.css"/>
+  <link rel="stylesheet" href="css/pages/home.css"/>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"></div>
+        <span class="logo-text">Chubby</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produto.html">Produtos</a></li>
+          <li><a href="carrinho.html">Carrinho</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="home">
+      <h2>Bem-vindo ao ChubbyHub</h2>
+      <p>Seu espaço de conforto, estilo e autoestima!</p>
+    </section>
+
+    <section id="produtos">
+      <h2>Produtos em destaque</h2>
+      <div class="produtos-grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500" alt="Vestido Plus Size">
+          <div class="card-content">
+            <h3>Vestido Floral Plus Size</h3>
+            <div class="rating">
+              <div class="stars">★★★★☆</div>
+              <span class="reviews">(42)</span>
+            </div>
+            <p class="preco">R$ 129,90</p>
+            <a href="#modal-vestido" class="btn">Comprar</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?w=500" alt="Blusa Plus Size">
+          <div class="card-content">
+            <h3>Blusa Básica Plus Size</h3>
+            <div class="rating">
+              <div class="stars">★★★★★</div>
+              <span class="reviews">(28)</span>
+            </div>
+            <p class="preco">R$ 89,90</p>
+            <a href="#modal-blusa" class="btn">Comprar</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=500" alt="Calça Plus Size">
+          <div class="card-content">
+            <h3>Calça Jeans Plus Size</h3>
+            <div class="rating">
+              <div class="stars">★★★★☆</div>
+              <span class="reviews">(35)</span>
+            </div>
+            <p class="preco">R$ 159,90</p>
+            <a href="#modal-calca" class="btn">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tabela">
+      <h2>Tabela de Medidas</h2>
+      <table>
+        <tr>
+          <th>Tamanho</th>
+          <th>Busto</th>
+          <th>Cintura</th>
+        </tr>
+        <tr>
+          <td>G</td>
+          <td>100-110cm</td>
+          <td>90-100cm</td>
+        </tr>
+        <tr>
+          <td>GG</td>
+          <td>110-120cm</td>
+          <td>100-110cm</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+
+  <!-- Modal Vestido -->
+  <div id="modal-vestido" class="modal">
+    <div class="modal-content">
+      <a href="#" class="modal-close">&times;</a>
+      <h3 class="modal-title">Confirmação de Compra</h3>
+      <p>Tem certeza que deseja comprar o Vestido Floral Plus Size?</p>
+      <div class="modal-buttons">
+        <a href="#" class="modal-btn cancel">Não</a>
+        <a href="produto.html" class="modal-btn confirm">Sim</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Blusa -->
+  <div id="modal-blusa" class="modal">
+    <div class="modal-content">
+      <a href="#" class="modal-close">&times;</a>
+      <h3 class="modal-title">Confirmação de Compra</h3>
+      <p>Tem certeza que deseja comprar a Blusa Básica Plus Size?</p>
+      <div class="modal-buttons">
+        <a href="#" class="modal-btn cancel">Não</a>
+        <a href="produto.html" class="modal-btn confirm">Sim</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Calça -->
+  <div id="modal-calca" class="modal">
+    <div class="modal-content">
+      <a href="#" class="modal-close">&times;</a>
+      <h3 class="modal-title">Confirmação de Compra</h3>
+      <p>Tem certeza que deseja comprar a Calça Jeans Plus Size?</p>
+      <div class="modal-buttons">
+        <a href="#" class="modal-btn cancel">Não</a>
+        <a href="produto.html" class="modal-btn confirm">Sim</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 ChubbyHub</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout - ChubbyHub</title>
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/components/navbar.css"/>
+  <link rel="stylesheet" href="css/components/footer.css"/>
+  <link rel="stylesheet" href="css/pages/checkout.css"/>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>ChubbyHub</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produto.html">Produtos</a></li>
+          <li><a href="carrinho.html">Carrinho</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="checkout">
+      <h2>Finalizar Compra</h2>
+      <div class="checkout-grid">
+        <div class="checkout-form">
+          <form>
+            <div class="form-section">
+              <h3>Informações Pessoais</h3>
+              <div class="form-group">
+                <label for="name">Nome Completo</label>
+                <input type="text" id="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Telefone</label>
+                <input type="tel" id="phone" required>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h3>Endereço de Entrega</h3>
+              <div class="form-group">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" required>
+              </div>
+              <div class="form-group">
+                <label for="address">Endereço</label>
+                <input type="text" id="address" required>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="number">Número</label>
+                  <input type="text" id="number" required>
+                </div>
+                <div class="form-group">
+                  <label for="complement">Complemento</label>
+                  <input type="text" id="complement">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="neighborhood">Bairro</label>
+                  <input type="text" id="neighborhood" required>
+                </div>
+                <div class="form-group">
+                  <label for="city">Cidade</label>
+                  <input type="text" id="city" required>
+                </div>
+                <div class="form-group">
+                  <label for="state">Estado</label>
+                  <select id="state" required>
+                    <option value="">Selecione</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <!-- Adicione outros estados -->
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h3>Forma de Pagamento</h3>
+              <div class="payment-methods">
+                <label class="payment-method">
+                  <input type="radio" name="payment" value="credit" required>
+                  <span>Cartão de Crédito</span>
+                </label>
+                <label class="payment-method">
+                  <input type="radio" name="payment" value="debit">
+                  <span>Cartão de Débito</span>
+                </label>
+                <label class="payment-method">
+                  <input type="radio" name="payment" value="pix">
+                  <span>PIX</span>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn checkout-btn">Finalizar Pedido</button>
+          </form>
+        </div>
+
+        <div class="order-summary">
+          <h3>Resumo do Pedido</h3>
+          <div class="summary-items">
+            <div class="summary-item">
+              <span>Vestido Floral Plus Size (G)</span>
+              <span>R$ 129,90</span>
+            </div>
+          </div>
+          <div class="summary-totals">
+            <div class="summary-item">
+              <span>Subtotal</span>
+              <span>R$ 129,90</span>
+            </div>
+            <div class="summary-item">
+              <span>Frete</span>
+              <span>R$ 15,00</span>
+            </div>
+            <div class="summary-item total">
+              <span>Total</span>
+              <span>R$ 144,90</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 ChubbyHub</p>
+  </footer>
+</body>
+</html> 

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - ChubbyHub</title>
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/components/navbar.css"/>
+  <link rel="stylesheet" href="css/components/footer.css"/>
+  <link rel="stylesheet" href="css/components/modal.css"/>
+  <link rel="stylesheet" href="css/pages/auth.css"/>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>ChubbyHub</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produto.html">Produtos</a></li>
+          <li><a href="carrinho.html">Carrinho</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="auth-section">
+      <h2>Login</h2>
+      <form class="auth-form">
+        <input type="email" placeholder="E-mail" required />
+        <input type="password" placeholder="Senha" required />
+        <a href="#modal-success" class="btn">Entrar</a>
+        <p class="auth-link">Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Modal de Sucesso -->
+  <div id="modal-success" class="modal">
+    <div class="modal-content">
+      <a href="#" class="modal-close">&times;</a>
+      <h3 class="modal-title">Login Realizado!</h3>
+      <p>Seu login foi realizado com sucesso. Bem-vindo(a) de volta!</p>
+      <div class="modal-buttons">
+        <a href="index.html" class="modal-btn confirm">Ir para Home</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 ChubbyHub</p>
+  </footer>
+</body>
+</html> 

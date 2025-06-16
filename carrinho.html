@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carrinho - ChubbyHub</title>
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/components/navbar.css"/>
+  <link rel="stylesheet" href="css/components/footer.css"/>
+  <link rel="stylesheet" href="css/pages/cart.css"/>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>ChubbyHub</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produto.html">Produtos</a></li>
+          <li><a href="carrinho.html">Carrinho</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="cart">
+      <h2>Seu Carrinho</h2>
+      <div class="cart-grid">
+        <div class="cart-items">
+          <div class="cart-item">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500" alt="Vestido Floral Plus Size">
+            <div class="item-details">
+              <h3>Vestido Floral Plus Size</h3>
+              <p class="item-size">Tamanho: G</p>
+              <p class="item-price">R$ 129,90</p>
+            </div>
+            <div class="item-quantity">
+              <button class="quantity-btn">-</button>
+              <input type="number" value="1" min="1" max="10">
+              <button class="quantity-btn">+</button>
+            </div>
+            <button class="remove-btn">Remover</button>
+          </div>
+        </div>
+        <div class="cart-summary">
+          <h3>Resumo do Pedido</h3>
+          <div class="summary-item">
+            <span>Subtotal</span>
+            <span>R$ 129,90</span>
+          </div>
+          <div class="summary-item">
+            <span>Frete</span>
+            <span>R$ 15,00</span>
+          </div>
+          <div class="summary-item total">
+            <span>Total</span>
+            <span>R$ 144,90</span>
+          </div>
+          <button class="btn checkout-btn">Finalizar Compra</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ChubbyHub</p>
+  </footer>
+</body>
+</html> 
